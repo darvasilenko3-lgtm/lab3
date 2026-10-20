@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <PackageJsonName Condition="$(PackageJsonName) == ''">lab3</PackageJsonName>
+    <PackageJsonVersion Condition="$(PackageJsonVersion) == ''">1.0.0</PackageJsonVersion>
+    <PackageJsonDescription Condition="$(PackageJsonDescription) == ''"></PackageJsonDescription>
+    <PackageJsonMain Condition="$(PackageJsonMain) == ''">app.js</PackageJsonMain>
+    <PackageJsonType Condition="$(PackageJsonType) == ''">module</PackageJsonType>
+    <PackageJsonScriptsStart Condition="$(PackageJsonScriptsStart) == ''">node index.js</PackageJsonScriptsStart>
+    <PackageJsonDependenciesCommander Condition="$(PackageJsonDependenciesCommander) == ''">^15.0.0</PackageJsonDependenciesCommander>
+  </PropertyGroup>
+</Project>

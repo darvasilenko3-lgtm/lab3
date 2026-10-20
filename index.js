@@ -20,7 +20,7 @@ async function readData(filePath) {
     }
 }
 
-//загальна можливість: Перелік
+//перелік
 program
     .command('list')
     .description('Показати список замовлень')
@@ -32,7 +32,7 @@ program
         console.table(result);
     });
 
-//загальна можливість: Один елемент
+//витягується один елемент
 program
     .command('get <id>')
     .description('Показати повне замовлення за ID')
@@ -43,7 +43,7 @@ program
         console.dir(order, { depth: null, colors: true });
     });
 
-//загальна можливість: Окреме поле
+//окреме поле
 program
     .command('field <id> <path>')
     .description('Показати значення поля (наприклад: deliveryAddress.city)')
